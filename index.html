@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SAED NYSC GOMBE | ...Corps Member Creating Wealth.</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      
+      body {
+        font-family: Arial Sans-Serif;
+        line-height: 1.6;
+        max-height: 100vh;
+      }
+      
+      a {
+        text-decoration: none;
+      }
+      
+      img {
+        width: 100%;
+      }
+      
+      .container {
+        max-width: 1100px;
+        padding: 20px;
+      }
+      
+      .header {
+        background-color: #22c55e;
+      }
+      .header a {
+        color: #fff;
+        max-height: 200px;
+      }
+      
+      .header a:hover {
+        background-color: #22c55e;
+        color: #fff;
+        width: auto;
+      }
+      
+      .header .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .logo-nav {
+        position: relative;
+      }
+      
+      .navbar-logo {
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      .mobile-menu,
+      .navbar-nav img {
+        width: 30px;
+        height: 30px;
+      }
+      
+       .navbar-nav img {
+         position: absolute;
+         margin: 20px;
+         right: 30px;
+       }
+      
+      .navbar-nav {
+        background-color: rgba(255, 255, 255, 0.98);
+        width: 100%;
+        height: 100vh;
+        font-size: 1.5rem;
+        position: fixed;
+        top: 0px;
+        left: 20px;
+        display: none;
+      }
+      
+      .navbar-nav a {
+        color: #333;
+        display: block;
+        margin-left: 10px;
+        margin: 50px;
+        padding-left: 30px;
+      }
+      
+      .hero {
+        background-image: linear-gradient(120deg, rgba(2, 2, 25, 0.6), rgba(2, 2, 25, 0.6)),
+        url('hero.jpeg');
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        height: 200px;
+      }
+      
+      .hero-content {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      
+      .hero-content h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+      
+      .about-content h2,
+      .skills-content h2,
+       .photo-content h2 {
+        background-color: #4ade80;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      .skills-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      
+      .skill-card {
+        box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      
+      .skill-card p {
+        font-size: 2rem;
+      }
+      
+      .photos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 20px;
+      }
+      
+      .accordion-content {
+        background-color: #f4f4f4;
+      }
+      
+      .accordion-content .accord-head {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+      }
+      
+      .accordion-content .accord-head::after {
+        content: '+';
+      }
+      
+      .accordion-content .accord-text {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+      
+      .accordion-content.active .accord-text {
+        height: auto;
+        padding: 20px;
+      }
+      
+      .accordion-content.active .accord-head::after {
+        content: '-';
+      }
+      
+      .footer {
+        background-color: #22c55e;
+        color: #fff;
+        text-align: center;
+      }
+      
+      @media (min-width: 786px) {
+        .mobile-menu {
+          display: none;
+        }
+        
+        .navbar-nav {
+          background-color: inherit;
+          height: auto;
+          top: 20px;
+          display: flex;
+          left: 800px;
+          
+        }
+        
+        .navbar-nav a {
+          color: #fff;
+          margin: 5px;
+          font-size: 1rem;
+          padding: 0;
+        }
+        
+        .navbar-nav a:hover {
+          border-bottom: 2px solid orange;
+        }
+        
+        .close-btn {
+          display: none;
+        }
+        
+        .hero-content h2 {
+          font-size: 2.5rem;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="header">
+      <div class="container logo-nav">
+        <a class="navbar-logo" href="#">SAED</a>
+        <div class="mobile-menu"><img src="bars-solid.svg"/></div>
+        <div class="navbar-nav">
+          <img src="xmark-solid.svg" class="close-btn"/>
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Skills Acquisition and Entrepreneurship Development
+          </h2>
+        </div>
+      </div>
+    </section>
+    
+    <section class="about" id="about">
+          <div class="container">
+            <div class="about-content">
+              <h2>About Us</h2>
+              <p>
+                SAED is the official Skill Acquision and Entrepreneurship Development (SAED) Department of the NYSC that is packed full of information, programs, tools and solution to help you develop yourself, get a job, start and grow your business, learn new skills, find trainers and business partners near you, and more.
+              </p>
+            </div>
+          </div>
+        </section>
+    
+    <section class="skills" id="skills">
+          <div class="container">
+            <div class="skills-content">
+              <h2>Skills</h2>
+              <div class="skills-card">
+              <div class="skill-card">
+                <img src="ict.jpeg"/>
+                <p>ICT</p>
+              </div>
+              <div class="skill-card">
+                <img src="agro.jpeg"/>
+                <p>Agro-allied</p>
+              </div>
+              <div class="skill-card">
+                <img src="fashion.jpeg"/>
+                <p>Fashion Design</p>
+              </div><div class="skill-card">
+                <img src="shoe.jpeg"/>
+                <p>Shoe Making</p>
+              </div>
+              <div class="skill-card">
+                <img src="tiedie.jpeg"/>
+                <p>Tie and Dye</p>
+              </div>
+              <div class="skill-card">
+                <img src="solar.jpeg"/>
+                <p>Solar Insatallation</p>
+              </div>
+              <div class="skill-card">
+                <img src="beautification.jpeg"/>
+                <p>Beautification</p>
+              </div>
+              <div class="skill-card">
+                <img src="photography.jpeg"/>
+                <p>Photography</p>
+              </div>
+              <div class="skill-card">
+                <img src="education.jpeg"/>
+                <p>Education</p>
+              </div><div class="skill-card">
+                <img src="upholstery.jpeg"/>
+                <p>Upholtery</p>
+              </div>
+              <div class="skill-card">
+                <img src="food.jpg"/>
+                <p>Food Processing</p>
+              </div>
+              <div class="skill-card">
+                <img src="culture.jpeg"/>
+                <p>Cultute</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+      <section class="photo-gallery">
+          <div class="container">
+            <div class="photo-content">
+              <h2>Photo Gallery</h2>
+              <div class="photos">
+                <img src="gallery3.jpg"/>
+                <img src="gallery1.jpg"/>
+                <img src="gallery2.jpg"/>
+                <img src="gallery4.jpg"/>
+                <img src="gallery6.jpg"/>
+                <img src="gallery5.jpg"/>
+              </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="accordion">
+          <div class="container">
+            <div class="accordion-content">
+              <div class="accord-head">
+                <h3>What is SAED</h3>
+              </div>
+              <p class="accord-text">SAED is the skill acquisition arm of NYSC aim at equiping graduate with skills to become self employed and also employers of labour.
+              </p>
+            </div>
+            <div class="accordion-content">
+              <div class="accord-head">
+                <h3>Available Skills</h3>
+              </div>
+              <p class="accord-text">
+                Agro-Allied <br/>
+                Food Processing <br/>
+                Culture and Tourism<br/>
+                Cosmetology <br/>
+                ICT <br/>
+                Construction <br/>
+                Beautification <br/>
+                Environment <br/>
+                Power and Energy <br/>
+                Education <br/>
+                Film and Photography <br/>
+                Automobile <br/>
+              </p>
+            </div>
+            <div class="accordion-content">
+              <div class="accord-head">
+                <h3>Funding</h3>
+              </div>
+              <p class="accord-text">
+                SAED help trained graduate access fund from partner financial bodies. Funding can come inform of grants or loans.
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <footer class="footer">
+          <div class="container">
+            <div>Copyright &copy; 2022.</div> 
+            <div>Designed by 2022 Batch B ICT SAED Group.</div>
+        </div>
+      </div>
+    </footer>
+    
+    <script>
+      const mobileBtn = document.querySelector('.mobile-menu');
+      const closeBtn = document.querySelector('.close-btn');
+      const mobileMenu = document.querySelector('.navbar-nav');
+      
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.style.display = 'block';
+      });
+      
+      closeBtn.addEventListener('click', () => {
+        mobileMenu.style.display = 'none';
+      });
+      
+      //accordion
+      const accordionContent = document.querySelectorAll('.accordion-content');
+      
+      accordionContent.forEach((content) => {
+        content.addEventListener('click', (e) => {
+          content.classList.toggle('active')
+        })
+      
+      });
+
+    </script>
+  </body>
+</html>
