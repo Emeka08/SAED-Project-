@@ -87,12 +87,6 @@
         margin-bottom: 20px;
       }
       
-      .skills-card {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-      }
-      
       .skill-card {
         box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.5);
         border-radius: 5px;
@@ -108,8 +102,10 @@
       }
       
       .photos {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 20px;
       }
       
