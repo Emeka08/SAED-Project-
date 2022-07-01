@@ -20,7 +20,7 @@
       }
       
       img {
-        width: 100%;
+        width: 85%;
       }
       
       .container {
@@ -48,43 +48,14 @@
         align-items: center;
       }
       
-      .logo-nav {
-        position: relative;
-      }
-      
       .navbar-logo {
         font-size: 1.5rem;
         cursor: pointer;
       }
-      .mobile-menu,
-      .navbar-nav img {
-        width: 30px;
-        height: 30px;
-      }
       
-       .navbar-nav img {
-         position: absolute;
-         margin: 20px;
-         right: 30px;
-       }
-      
-      .navbar-nav {
-        background-color: rgba(255, 255, 255, 0.98);
-        width: 100%;
-        height: 100vh;
-        font-size: 1.5rem;
-        position: fixed;
-        top: 0px;
-        left: 20px;
-        display: none;
-      }
-      
-      .navbar-nav a {
+      .nav-bar a {
         color: #333;
-        display: block;
-        margin-left: 10px;
-        margin: 50px;
-        padding-left: 30px;
+        padding-left: 20px;
       }
       
       .hero {
@@ -180,49 +151,13 @@
         text-align: center;
       }
       
-      @media (min-width: 786px) {
-        .mobile-menu {
-          display: none;
-        }
-        
-        .navbar-nav {
-          background-color: inherit;
-          height: auto;
-          top: 20px;
-          display: flex;
-          left: 800px;
-          
-        }
-        
-        .navbar-nav a {
-          color: #fff;
-          margin: 5px;
-          font-size: 1rem;
-          padding: 0;
-        }
-        
-        .navbar-nav a:hover {
-          border-bottom: 2px solid orange;
-        }
-        
-        .close-btn {
-          display: none;
-        }
-        
-        .hero-content h2 {
-          font-size: 2.5rem;
-        }
-      }
-      
     </style>
   </head>
   <body>
     <nav class="header">
       <div class="container logo-nav">
         <a class="navbar-logo" href="#">SAED</a>
-        <div class="mobile-menu"><img src="bars-solid.svg"/></div>
-        <div class="navbar-nav">
-          <img src="xmark-solid.svg" class="close-btn"/>
+        <div class="nav-bar">
           <a href="#">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
@@ -355,7 +290,7 @@
                 <h3>Funding</h3>
               </div>
               <p class="accord-text">
-                SAED help trained graduate access fund from partner financial bodies. Funding can come inform of grants or loans.
+                SAED help trained graduate access fund from partner financial bodies like BOI, CBN etc. Funding can come inform of grants or loans.
               </p>
             </div>
           </div>
@@ -371,16 +306,6 @@
     
     <script>
       const mobileBtn = document.querySelector('.mobile-menu');
-      const closeBtn = document.querySelector('.close-btn');
-      const mobileMenu = document.querySelector('.navbar-nav');
-      
-      mobileBtn.addEventListener('click', () => {
-        mobileMenu.style.display = 'block';
-      });
-      
-      closeBtn.addEventListener('click', () => {
-        mobileMenu.style.display = 'none';
-      });
       
       //accordion
       const accordionContent = document.querySelectorAll('.accordion-content');
